@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <!-- Conectar CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Conectar tu propio archivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-top" class="index">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#page-top">Nicolocho</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li class="page-scroll">
+                      <a href="#portfolio">Portafolio</a>
+                  </li>
+                  <li class="page-scroll">
+                      <a href="#about">Sobre Mi</a>
+                  </li>
+                  <li class="page-scroll">
+                      <a href="#contact">Contáctame</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Header -->
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <img class="img-responsive" src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/profile.png" alt="">
+                  <div class="intro-text">
+                      <span class="name">Nico Gomez</span>
+                      <hr class="star-light">
+                      <span class="skills">Desarrollador web - Programador - Músico - Un poco loco</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <!-- Portfolio Grid Section -->
+  <section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Portafolio</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-offset-3 text-center">
+                <h3>Proyecto gestión de facturas</h3>
+                <!-- Video -->
+                <video width="100%" controls>
+                  <source src="videos/demo_final.mp4" type="video/mp4">
+                  <!-- Opcionalmente, puedes agregar otros formatos si los tienes disponibles -->
+                  <!-- <source src="videos/demo_final.webm" type="video/webm"> -->
+                  <!-- <source src="videos/demo_final.ogv" type="video/ogg"> -->
+                  Tu navegador no soporta la etiqueta de video.
+              </video>
+                <p>El proyecto se basa en la creación y proceso de facturas en una empresa, donde recorre distintas áreas, con las respectivas fechas y estados necesarios para cada área.
+                  <br> <br>Desarrollado en el Framework Ruby On Rails, Base de Datos Mysql, Repositorio en Github por medio de Git en la terminal de Ubuntu.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- About Section -->
+  <section class="success" id="about">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2>Sobre Mi</h2>
+                  <hr class="star-light">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-lg-offset-2">
+                  <p>La pasión que tengo por la tecnología es algo que me ha caracterizado desde muy pequeño, y ahora que decidí entrar a este mundo, supe que no sería fácil,
+                    pero las veces que me he propuesto aprender e intentar lo he logrado.
+                  </p>
+              </div>
+              <div class="col-lg-4">
+                  <p>Mi experiencia actual es de nivel técnico, con conocimiento en C#, Java, HTML, CSS, JavaScript, bases de datos relacionales como MySQL y PostgreSQL,
+                    sistema operativo Ubuntu, Git, Github, pero mi experiencia más sólida es en el lenguaje de Ruby con el framework Ruby On Rails.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Contáctame</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <form id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre" id="from_name" required data-validation-required-message="Por favor ingresa tu nombre.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Correo</label>
+                            <input type="email" class="form-control" placeholder="Correo" id="reply_to" required data-validation-required-message="Por favor ingresa tu correo electrónico.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Número de Teléfono</label>
+                            <input type="tel" class="form-control" placeholder="Número de Teléfono" id="phone" required data-validation-required-message="Por favor ingresa tu número de teléfono.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Mensaje</label>
+                            <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingresa un mensaje."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-success btn-lg" id="button">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+      <div class="footer-above">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col col-md-4">
+                      <h3>Ubicación</h3>
+                      <p>Colombia<br/>Medellín Antioquia 050030</p>
+                  </div>
+                  <div class="footer-col col-md-4">
+                      <h3>Redes Sociales</h3>
+                      <ul class="list-inline">
+                        <li>
+                          <a href="https://www.linkedin.com/in/nicolas-gómez-cano-775054238/" class="btn-social btn-outline" target="_blank">
+                              <i class="fa fa-fw fa-linkedin"></i>
+                          </a>
+                      </li>
+                          <li>
+                              <a href="https://github.com/nicolocho03" class="btn-social btn-outline" target="_blank">
+                                <i class="fa fa-fw fa-github"></i>
+                            </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="footer-col col-md-4">
+                      <h3>Nicolocho</h3>
+                      <p>Este sitio fue creado para compartir mis proyectos a interesados en mi trabajo y habilidades en el mundo del desarrollo.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-below">
+          <div class="container">
+              <p>&copy; 2024 Nico Gomez</p>
+          </div>
+      </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+</body>
+</html>
